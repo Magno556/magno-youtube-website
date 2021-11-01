@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play-video</title>
+    <link rel="stylesheet" href="./youtube.css">
+    <link rel="stylesheet" type="text/css"
+        href="C:\Users\TBME\Desktop\fontawesome-icon\fontawesome-free-5.15.4-web\css\all.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="right-header">
+            <div>
+                <i class="fas fa-align-justify" class="menu" id="menu"></i>
+            </div>
+
+            <div>
+                <i class="fab fa-youtube" class="logo"></i>
+
+            </div>
+            <div class="utube">
+                youtube
+            </div>
+
+
+        </div>
+        <div class="middle-header">
+            <div>
+                <form action="">
+                    <input type="text" placeholder="search">
+                </form>
+            </div>
+
+            <i class="fas fa-search" class="search"
+                style="width: 40px; height: 30px; background-color:#ccc; margin-right: 2%; "></i>
+
+            <i class="fas fa-microphone" class="mic"
+                style="width: 40px; height: 30px; background-color:#ccc; border-radius: 50%;"></i>
+
+
+        </div>
+        <div class="left-header">
+            <i class="fas fa-video" class="plus"></i>
+            <i class="fas fa-th" class="u-tube"></i>
+            <i class="fas fa-bell" class="notifications"></i>
+            <img src="data:image/jpeg;base64,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"
+                class="profile" alt="">
+        </div>
+
+    </div>
+
+    <div class="container play-container">
+        <div class="row">
+            <div class="play-video">
+
+                <iframe width="130%" height="50%" style="background-color: red;"
+                    src="https://www.youtube.com/embed/gYsS06aQY2w" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div id="play-container">
+                    <h8 class="title">Bohikor mobile app explanation</h8>
+                    <div class="time-likes">
+                        <div>
+                            <p>367k views 20hrs ago</p>
+                        </div>
+                        <div class="likes">
+                            <i class="fas fa-thumbs-up">354k</i>
+                            <i class="far fa-thumbs-down">23k</i>
+                            <i class="fas fa-file-download">SAVE</i>
+                            <i class="fas fa-file-download">SAVE ...</i>
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="owner-profile">
+                        <div class="profile-name">
+                            <div class="profile-pic"><i class="fas fa-user-circle"></i></div>
+                            <div class="owner-name">
+                                <p>bohikor Company</p>
+                                <p>10.k subcribers</p>
+                            </div>
+                        </div>
+                        <div class="subcriber"> <button>subcribers</button></div>
+                    </div>
+                    <div class="owner-words">
+                        SHOW MORE
+                    </div>
+
+                    <hr>
+                    <div>
+                        <h4> 4 comments</h4>
+                    </div>
+                    <div class="pro-com">
+                        <div><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <p>add a public comment</p>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <!--------people comments --------->
+
+
+                    <div class="people-comment">
+                        <div class="pic"><i class="fas fa-user-circle"></i></div>
+                        <div class="names">
+                            <p>Brandon</p>
+                            <p>cool one. not too bad. keep up</p>
+                        </div>
+                    </div>
+                    <div class="people-comment">
+                        <div class="pic"><i class="fas fa-user-circle"></i></div>
+                        <div class="names">
+                            <p>Jennifer</p>
+                            <p> <h8>waohh courage bohikor company.</h8></p>
+                        </div>
+                    </div>
+                    <div class="people-comment">
+                        <div class="pic"><i class="fas fa-user-circle"></i></div>
+                        <div class="names">
+                            <p>Sharon</p>
+                            <p>not interested actually. oops!</p>
+                        </div>
+                    </div>
+                    
+                  
+
+                </div>
+
+
+            </div>
+            <div class="video-list">
+                <div class="button">
+                    <button class="filter-options active">all</button>
+                    <button class="filter-options">CSS</button>
+                    <button class="filter-options" style="overflow-y: hidden;">web development</button>
+                    <button class="filter-options">python</button>
+                    <button class="filter-options">entertainment</button>
+                    <button class="filter-options">marvel</button>
+                </div>
+                <div class="videos">
+                    <div class="single-video">
+                        <div>
+                            <a href="">
+                                <iframe width="80%" height="90vh" src="https://www.youtube.com/embed/gYsS06aQY2w"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </a>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>bohikor mobile app explanation </p>
+                            </a>
+                            <p class="small"> 367k views <br> 20hrs ago</p>
+                        </div>
+                    </div>
+                    <div class="single-video">
+                        <div>
+                            <iframe width="70%" height="90vh" src="https://www.youtube.com/embed/O43nrGo4iRA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>budgeting with bohikor</p>
+                            </a>
+                            <div class="small">
+                                <p> 367k views <br> 20hrs ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-video">
+                        <div>
+                            <iframe width="70%" height="90vh" src="https://www.youtube.com/embed/nE9E1dGgXmA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>craete different account</p>
+                            </a>
+                            <p class="small"> 369k views <br> 1yr ago</p>
+                        </div>
+                    </div>
+
+
+                    <div class="single-video">
+                        <div>
+                            <iframe width="79%" height="90vh" src="https://www.youtube.com/embed/sfHGfzJ3sBg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>add money to existing account</p>
+                            </a>
+                            <p class="small"> 367k views <br> 4yrs ago</p>
+                        </div>
+                    </div>
+
+                    <div class="single-video">
+                        <div>
+                            <iframe width="80%" height="90vh" src="https://www.youtube.com/embed/7kCTzyDZoig"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>inner account transfer bohikor </p>
+                            </a>
+                            <p class="small"> 1067k views <br> 10yrs ago</p>
+                        </div>
+                    </div>
+                    <div class="single-video">
+                        <div>
+                            <iframe width="80%" height="90vh" src="https://www.youtube.com/embed/7kCTzyDZoig"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>inner account transfer bohikor </p>
+                            </a>
+                            <p class="small"> 367k views <br> 5yrs ago</p>
+                        </div>
+                    </div>
+                    <div class="single-video">
+                        <div>
+                            <iframe width="80%" height="90vh" src="https://www.youtube.com/embed/7kCTzyDZoig"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>inner account transfer bohikor </p>
+                            </a>
+                            <p class="small"> 367k views <br> 5yrs ago</p>
+                        </div>
+                    </div>
+                    <div class="single-video">
+                        <div>
+                            <iframe width="80%" height="90vh" src="https://www.youtube.com/embed/7kCTzyDZoig"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>inner account transfer bohikor </p>
+                            </a>
+                            <p class="small"> 1067k views <br> 10yrs ago</p>
+                        </div>
+                    </div>
+                    <div class="single-video">
+                        <div>
+                            <a href="">
+                                <iframe width="80%" height="90vh" src="https://www.youtube.com/embed/gYsS06aQY2w"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </a>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>bohikor mobile app explanation </p>
+                            </a>
+                            <p class="small"> 367k views <br> 20hrs ago</p>
+                        </div>
+                    </div>
+                    <div class="single-video">
+                        <div>
+                            <a href="">
+                                <iframe width="80%" height="90vh" src="https://www.youtube.com/embed/gYsS06aQY2w"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </a>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>bohikor mobile app explanation </p>
+                            </a>
+                            <p class="small"> 367k views <br> 20hrs ago</p>
+                        </div>
+                    </div>
+                    <div class="single-video">
+                        <div>
+                            <iframe width="80%" height="90vh" src="https://www.youtube.com/embed/7kCTzyDZoig"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>inner account transfer bohikor </p>
+                            </a>
+                            <p class="small"> 1067k views <br> 10yrs ago</p>
+                        </div>
+                    </div>
+                    <div class="single-video">
+                        <div>
+                            <iframe width="80%" height="90vh" src="https://www.youtube.com/embed/7kCTzyDZoig"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="title">
+                            <a href="">
+                                <p>inner account transfer bohikor </p>
+                            </a>
+                            <p class="small"> 1067k views <br> 10yrs ago</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
